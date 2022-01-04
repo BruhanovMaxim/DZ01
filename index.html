@@ -39,8 +39,8 @@
                 <ul class="list">
                     <li>Изучить новое для себя</li>
                     <li>Прокачать свои скилы</li>
-                    <li>Познакомиться с людьми которые движуться в напровлении IT</li>
-                    <li>Повысить благосостояние за счет новых умений</li>
+                    <li>Познакомиться с людьми которые движуться в направлении IT</li>
+                    <li>Повысить благосостояние засчет новых умений</li>
                 </ul>
             </div>
             <div class="card bg-b3">
@@ -118,8 +118,24 @@
                     </div>
                 </div>
             </div>
+            <div class="box bg-b2">
+                <a href="#" class="box_setings">^</a>
+            </div>
         </footer>
     </div>
+    <script>
+        $(document).ready(function () {
+            $('[href^="#"]').on('click', function (event) {
+                if ($(this).attr('hash') !== "") {
+                    event.preventDefault();
+                    let hash = $(this).prop('hash');
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {});
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
