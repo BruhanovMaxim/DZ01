@@ -63,8 +63,8 @@ a{
         padding: 20px 0 0 20px;
     }
     .box{
-        position: fixed;
-        left: 500px;
+        position: absolute;
+        right: 0px;
     }
 }
 /* -------------------------------[ main ]--------------------------------------------- */
@@ -177,12 +177,17 @@ a{
 .social::before{
     box-shadow: 0px 4px 1px rgb(128, 41, 41);
 }
+.box-box{
+    position: relative;
+    margin-top: 70px;
+}
 .box{
+    display: flex;
+    flex-direction: column;
     width: 50px;
     height: 50px;
-    position: fixed;
-    bottom: 5px;
-    right: 550px;
+    position: absolute;
+    right: 0px;
     border-radius: 50%;
     opacity: 0.5;
     z-index: 1000;
